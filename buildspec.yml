@@ -4,6 +4,8 @@ env:
   variables:
     AWS_REGION_2: "us-east-2"
     REACT_APP_API_SERVICE_URL: "http://localhost:5004"
+    username: "adihusky"
+    password: "adi6DOCKER@"
 
 phases:
   install:
@@ -11,6 +13,7 @@ phases:
       docker: 18
   pre_build:
     commands:
+      - docker login -u $username -p $password
       - echo logging in to ecr...
       - >
         aws ecr get-login-password --region $AWS_REGION \
