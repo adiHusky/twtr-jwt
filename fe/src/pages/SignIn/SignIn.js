@@ -128,7 +128,7 @@ const SignIn = () => {
     // fetch("http://localhost:5000/login", config)
     console.log("Signin.js fetching from " + `${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/tweet`);
     //fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/login`, config)
-    fetch("http://flask-react-alb-1300309328.us-east-1.elb.amazonaws.com/login", config)
+    fetch("http://flask-react-alb-241532345.us-east-1.elb.amazonaws.com/login", config)
       //fetch(`${process.env.REACT_APP_API_SERVICE_URL}/login`, config)
       .then(response => response.json())
       .then(data => {
@@ -174,7 +174,7 @@ const SignIn = () => {
     // fetch("http://localhost:5000/fastlogin", config)
     console.log("Signin.js fetching from " + `${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/tweet`);
     //fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/fastlogin`, config)
-    fetch("http://flask-react-alb-1300309328.us-east-1.elb.amazonaws.com/fastlogin", config)
+    fetch("http://flask-react-alb-241532345.us-east-1.elb.amazonaws.com/fastlogin", config)
       //fetch(`${process.env.REACT_APP_API_SERVICE_URL}/fastlogin`, config)
       .then(response => response.json())
       .then(data => {
