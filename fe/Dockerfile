@@ -1,0 +1,4 @@
+FROM nginx
+COPY build /usr/share/nginx/html
+# ENV REACT_APP_BE_NETWORK http://localhost
+# ENV REACT_APP_BE_PORT 5000
