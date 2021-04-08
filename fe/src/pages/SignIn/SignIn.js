@@ -218,7 +218,7 @@ const SignIn = () => {
           </Button>
 
           <Typography component="h1" variant="h5" className={classes.padding}>
-            {'Fast Sign In'}
+            {'NEW CHANGE Fast Sign In'}
           </Typography>
           <Typography gutterBottom>If this is your device.</Typography>
           <Button fullWidth variant="contained" margin="normal" color="primary" onClick={handleFastSignIn} className={classes.buttonPadding}>
